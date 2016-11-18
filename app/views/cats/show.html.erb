@@ -1,5 +1,7 @@
 <h1> <%= @cat.name %> </h1>
-<img src= <%= @cat.picture.url(:medium) %> />
+<% if @cat.picture? %>
+<%= cl_image_tag(@cat.picture.path) %>
+<% end %>
 
 <p> <%= @cat.age %> </p>
 <p> <%= @cat.gender %> </p>

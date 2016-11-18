@@ -18,11 +18,12 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 # Bootstrap Frontend Framework
 gem 'bootstrap-sass'
-gem 'paperclip'
 # Pagination
 gem 'will_paginate'
 # Devise for User Auth
 gem 'devise'
+gem 'cloudinary'
+gem 'attachinary'
 
 
 
@@ -32,6 +33,7 @@ group :development, :test do
   gem 'faker'
   gem 'populator'
   gem 'annotate'
+  gem 'dotenv-rails'
 end
 
 group :development do
